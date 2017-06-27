@@ -119,14 +119,10 @@
 
 // 显示控制器的view
 - (void)showVc:(NSInteger)index {
-    
     CGFloat offsetX = index * self.view.frame.size.width;
-    
     UIViewController *vc = self.childViewControllers[index];
-    
     // 判断控制器的view有没有加载过,如果已经加载过,就不需要加载
     if (vc.isViewLoaded) return;
-    
     [self.mainScrollView addSubview:vc.view];
     vc.view.frame = CGRectMake(offsetX, 0, self.view.frame.size.width, self.view.frame.size.height);
 }
