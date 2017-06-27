@@ -5,6 +5,8 @@
 //  Created by 袁超杰 on 2017/6/26.
 //  Copyright © 2017年 wangli.space. All rights reserved.
 //
+// 欢迎来Github上下载最完整的Demo
+// Github下载地址 https://github.com/DeadRabbit2016/CJTopScrollViewMenu.git
 
 #import "CJAllMenuView.h"
 #import "UIView+CJExtension.h"
@@ -46,6 +48,7 @@ static CGFloat const radio = 1.0;
     }
     return _menusContentView;
 }
+
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
         self.backgroundColor = [UIColor colorWithWhite:1.0 alpha:0.8];
@@ -87,7 +90,6 @@ static CGFloat const radio = 1.0;
     [self layoutLabels:titlesArr withConstantFont:labelFontOfSize];
     // 固定width 调整字体大小
 //    [self layoutLabels:titlesArr withConstansWidth:(CJ_ScreenWidth-4*15)/3.0];
-    
 }
 // 固定字体大小 调整width
 - (void)layoutLabels:(NSArray *)titlesArr withConstantFont:(UIFont *)font{

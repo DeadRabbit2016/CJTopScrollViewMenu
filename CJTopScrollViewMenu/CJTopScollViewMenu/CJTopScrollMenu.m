@@ -5,6 +5,8 @@
 //  Created by 袁超杰 on 2017/6/26.
 //  Copyright © 2017年 wangli.space. All rights reserved.
 //
+// 欢迎来Github上下载最完整的Demo
+// Github下载地址 https://github.com/DeadRabbit2016/CJTopScrollViewMenu.git
 
 #import "CJTopScrollMenu.h"
 #import "UIView+CJExtension.h"
@@ -133,10 +135,6 @@ static CGFloat const radio = 1.0;
     // 1.标题颜色变成红色,设置高亮状态下的颜色， 以及指示器位置
     [self selectLabel:selLabel];
     
-    // 2.让选中的标题居中
-    [self setupTitleCenter:selLabel];
-    
-    
     NSInteger index = selLabel.tag;
     if ([self.topScrollMenuDelegate respondsToSelector:@selector(CJTopScrollMenu:didSelectTitleAtIndex:)]) {
         [self.topScrollMenuDelegate CJTopScrollMenu:self didSelectTitleAtIndex:index];
@@ -164,6 +162,10 @@ static CGFloat const radio = 1.0;
         self.indicatorView.CJ_width = label.CJ_width - 2 * labelMargin;
         self.indicatorView.CJ_centerX = label.CJ_centerX;
     }];
+    
+    // 2.让选中的标题居中
+    [self setupTitleCenter:label];
+
 }
 
 /** 设置选中的标题居中 */
