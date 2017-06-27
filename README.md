@@ -1,7 +1,7 @@
 ## 效果图
 ![](https://github.com/DeadRabbit2016/CJTopScrollViewMenu/blob/master/GIF/CJTopScrollMenu.gif)
 
-##代码介绍
+## 代码介绍
 * 将项目中 CJTopScollViewMenu 文件夹导入工程
 * 导入 #import "CJTopScrollMenu.h" 头文件
 
@@ -50,4 +50,4 @@
 }
 ```
 ## 写在最后
-* 如在使用中, 遇到什么问题或有更好建议者, 请记得 [Issues me](https://github.com/kingsic/SGAdvertScrollView/issues) 或 yuanchaojie2014@163.com 邮箱联系我
+* 如在使用中, 遇到什么问题或有更好建议者, 请记得 [Issues me](https://github.com/DeadRabbit2016/CJTopScrollViewMenu/issues) 或 yuanchaojie2014@163.com 邮箱联系我
